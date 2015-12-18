@@ -29,12 +29,7 @@ public class User {
 	
 	private String phone;
 	
-	public User(long id, String name,String email,String phone){
-		this.id = id;
-		this.name = name;
-		this.email = email;
-		this.phone = phone;
-		
+	public User(){
 	logger.info("User instance created..." + this.toString());
 	}
 	
