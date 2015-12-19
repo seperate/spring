@@ -30,7 +30,7 @@ public class User {
 	private String phone;
 	
 	public User(){
-	logger.info("User instance created..." + this.toString());
+	logger.debug("User instance created..." + this.toString());
 	}
 	
 	public long getId() {

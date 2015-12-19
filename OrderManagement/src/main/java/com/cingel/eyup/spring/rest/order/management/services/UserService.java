@@ -9,7 +9,7 @@ import com.cingel.eyup.spring.rest.order.management.model.User;
 
 @Service
 public interface UserService {
-	public long addNewUser(UserDto aUser);
+	public long addNewUser(User user);
 	public boolean deleteUserById(long id);
 	public boolean updateUserById(long id, UserDto userData);
 	public List<User> findAllUsers();

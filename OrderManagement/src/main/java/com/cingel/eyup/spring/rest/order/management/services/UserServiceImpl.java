@@ -23,14 +23,10 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public long addNewUser(UserDto aUser) {
-		User addedUser = new User();
-		addedUser.setEmail(aUser.getEmail());
-		addedUser.setName(aUser.getName());
-		addedUser.setPhone(aUser.getPhone());
-		userRepository.save(addedUser);
+	public long addNewUser(User aUser) {
+		userRepository.save(aUser);
 		logger.info("User Saved : " + aUser.toString());
-		return addedUser.getId();
+		return aUser.getId();
 	}
 
 	@Override
